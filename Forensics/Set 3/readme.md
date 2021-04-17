@@ -7,9 +7,9 @@
 - By the challenge name itself we can understand that there is something to do with `HTTP packets`. 
 - So analysing the `HTTP` Packets gives the `flag`.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/1.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/1.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/2.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/2.jpeg?raw=true)
 
 ```
 Flag --> picoCTF{n0ts3cur3_894a6546}
@@ -20,9 +20,9 @@ Flag --> picoCTF{n0ts3cur3_894a6546}
 - By the challenge name itself we can understand that there is something to do with `DNS packets`. 
 - So analysing the `DNS` Packets gives the `flag`.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/3.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/3.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/4.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/4.jpeg?raw=true)
 
 ```
 Flag --> picoCTF{w4lt3r_wh1t3_2d6d3c6c75aa3be7f42debed8ad16e3b}
@@ -38,13 +38,13 @@ Flag --> picoCTF{w4lt3r_wh1t3_2d6d3c6c75aa3be7f42debed8ad16e3b}
 - Here to avoid he unwanted chunks apply some filter to slice them.
 - It can be indentified by seeing the `hex` of the `ZIP`.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/6.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/6.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/5.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/5.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/7.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/7.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/8.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/8.jpeg?raw=true)
 
 ```
 from scapy.all import *
@@ -67,14 +67,14 @@ with open("final.zip", "wb") as g: # Write to the File
 
 - After `compliling` and `running` the `script` we shall get the `ZIP` file.
 
-[PCAP File -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Biz44re/bizz.pcap)
-[Script -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Biz44re/1.py)
-[Zip File -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Biz44re/final.zip)
-[PNG File](https://github.com/a3X3k/Bi0s/blob/master/Network/Biz44re/flag.png)
+[PCAP File -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/bizz.pcap)
+[Script -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/1.py)
+[Zip File -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/final.zip)
+[PNG File](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/flag.png)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/9.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/9.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Biz44re/flag.png?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Biz44re/flag.png?raw=true)
 
 ### Its My Pal :
 
@@ -87,13 +87,13 @@ with open("final.zip", "wb") as g: # Write to the File
 - So `slice` the rest of the `chunks`.
 - It can be indentified by seeing the `hex` of the `ZIP`.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/10.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/10.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/11.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/11.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/12.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/12.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/13.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/13.jpeg?raw=true)
 
 ```
 from scapy.all import *
@@ -115,18 +115,18 @@ with open("final.zip", "w") as g: # Write to the File
 - But its Password Protected.
 - So using Frackzip we shall crack the Password.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/14.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/14.jpeg?raw=true)
 
 ```
 Password --> craccer
 ```
 
-[PCAP File -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Its%20Complicated/1.pcap)
-[Script -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Its%20Complicated/1.py)
-[Zip File -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Its%20Complicated/final.zip)
-[JPG File](https://github.com/a3X3k/Bi0s/blob/master/Network/Its%20Complicated/flag.jpg)
+[PCAP File -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Its%20Complicated/1.pcap)
+[Script -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Its%20Complicated/1.py)
+[Zip File -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Its%20Complicated/final.zip)
+[JPG File](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Its%20Complicated/flag.jpg)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Its%20Complicated/flag.jpg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Its%20Complicated/flag.jpg?raw=true)
 
 ### Orcish :
 
@@ -138,17 +138,17 @@ Password --> craccer
 - The `Bytes` Equivalent of `Hex = x0022` is `34 Bytes`.
 - So `slice` the rest of the `chunks`.
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/15.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/15.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/16.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/16.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/17.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/17.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/18.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/18.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/19.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/19.jpeg?raw=true)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Assets/20.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Assets/20.jpeg?raw=true)
 
 ```
 from scapy.all import *
@@ -171,8 +171,8 @@ with open("final.gif", "w") as g:
 
 - After `compliling` and `running` the `script` we shall get the `GIF` file.
 
-[PCAP File -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Orcish/data.pcap)
-[Script -- ](https://github.com/a3X3k/Bi0s/blob/master/Network/Orcish/1.py)
-[GIF File](https://github.com/a3X3k/Bi0s/blob/master/Network/Orcish/final.gif)
+[PCAP File -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Orcish/data.pcap)
+[Script -- ](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Orcish/1.py)
+[GIF File](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Orcish/final.gif)
 
-![Bi0s](https://github.com/a3X3k/Bi0s/blob/master/Network/Orcish/final.gif?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Network/Orcish/final.gif?raw=true)
