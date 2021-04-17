@@ -4,12 +4,12 @@
 - Initially the file will be encrypted.
 - Use frcrack Zip to crack the Password.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/91.jpeg?raw=true)
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/92.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/91.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/92.jpeg?raw=true)
 
 ### B Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/97.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/97.jpeg?raw=true)
 
 #### Installation
 
@@ -25,7 +25,7 @@ $ binwalk -e <file-name>
 $ binwalk -e 1.jpg
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/93.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/93.jpeg?raw=true)
 
 - Here in the above image, we see that there is a jpeg image and a ZIP in it and we see that, it is embedded within the jpeg image file.
 - To extract it we can make use of a carving tool dd.
@@ -41,15 +41,15 @@ $ dd if=<filename> of=<filename> bs=1 skip=<offset>
 - `bs = i the byte skip argument that specifies the frequency of reading data from the given file.`
 
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/94.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/94.jpeg?raw=true)
 
 - If we try to extract all files we will get a `Zip File`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/95.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/95.jpeg?raw=true)
 
 - Now we get the `flag` inside the Image.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/96.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/96.jpeg?raw=true)
 
 ```
 Flag --> inctf{fr33dom_w4s_n0t_w0n_0v3rnit3}
@@ -57,20 +57,20 @@ Flag --> inctf{fr33dom_w4s_n0t_w0n_0v3rnit3}
 
 ### E Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/98.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/98.jpeg?raw=true)
 
 - Here when we analyze using `bin walk` we cant find anything. 
 - So Next option is to look into the `Hex Dump`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/99.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/99.jpeg?raw=true)
 
 - Online Tool --> https://hexed.it/
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/100.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/100.jpeg?raw=true)
 
 - Here at last we shall see that there are some `Hex Encrypted Text`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/101.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/101.jpeg?raw=true)
 
 - We have to decode it to get the `ASCII` Text.
 
@@ -80,7 +80,7 @@ Flag --> inctf{fr33dom_w4s_n0t_w0n_0v3rnit3}
 
 - Online Tool --> https://www.convertstring.com/EncodeDecode/HexDecode
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/102.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/102.jpeg?raw=true)
 
 ```
 Flag --> inctf{3x1f700L_is_g00d_!_guess!!!}
@@ -88,19 +88,19 @@ Flag --> inctf{3x1f700L_is_g00d_!_guess!!!}
 
 ### S Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/103.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/103.jpeg?raw=true)
 
 - When we analyze using `bin walk` we cant find anything. 
 - So Next option is to look into the `Hex Dump`.
 - Online Tool --> https://hexed.it/
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/104.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/104.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/100.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/100.jpeg?raw=true)
 
 - Here at last we shall see that there are some `Base 64 Encrypted` text.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/105.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/105.jpeg?raw=true)
 
 - We have to decode it to get the `ASCII Text`.
 
@@ -110,7 +110,7 @@ aW5jdGZ7c3RyaW5nc19hcmVfdXNlZnVsfQ==
 
 - Online Tool --> https://www.base64decode.org/
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/106.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/106.jpeg?raw=true)
 
 ```
 Flag --> inctf{strings_are_useful}
@@ -118,17 +118,17 @@ Flag --> inctf{strings_are_useful}
 
 ### S_H Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/107.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/107.jpeg?raw=true)
 
 - When we analyze using `bin walk` we cant find anything. 
 - So Next option is to look into the `Hex Dump`.
 - Online Tool --> https://hexed.it/
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/108.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/108.jpeg?raw=true)
 
 - Here at last we shall see that there are some Hex Encrypted Text.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/109.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/109.jpeg?raw=true)
 
 - We have to decode it to get the ASCII Text.
 
@@ -138,7 +138,7 @@ Flag --> inctf{strings_are_useful}
 
 - Online Tool --> https://www.rapidtables.com/convert/number/hex-to-ascii.html
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/110.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/110.jpeg?raw=true)
 
 - We shall see that there are some Base 64 Encrypted text.
 - We have to decode it to get the ASCII Text.
@@ -149,7 +149,7 @@ RmxhcmVJblRoZUhvbGUK
 
 - Online Tool --> https://www.base64decode.org/
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/111.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/111.jpeg?raw=true)
 
 ```
 FlareInTheHole
@@ -158,9 +158,9 @@ FlareInTheHole
 - We shall understand that this is an Password for the file.
 - Now if we try to extract with **StegHide** we shall extract the hidden file.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/112.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/112.jpeg?raw=true)
 
-[Click me to view the File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/flag.txt)
+[Click me to view the File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/flag.txt)
 
 ```
 Flag --> inctf{1_l0ve_c0unt3r_str1ke_1.6}
@@ -168,13 +168,13 @@ Flag --> inctf{1_l0ve_c0unt3r_str1ke_1.6}
 
 ### Z Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/114.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/114.jpeg?raw=true)
 
 - We can see that there is an `QR Code`.
 - We shall get the `flag` if we decode it.
 - Zbarimg is a tool used to scan and decode QR codes from image files
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/113.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/113.jpeg?raw=true)
 
 #### Installation
 
@@ -194,7 +194,7 @@ Flag --> flag{N0w_y0u_a_little_about_zbarimg}
 
 ### SS Challenge
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/115.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/115.jpeg?raw=true)
 
 - In this challenge we shall use the `StegSolve Tool` to decode the `Hidden text`.
 - `Stegsolve` is used to `analyze images` in `different planes` by taking off `bits` of the image.
@@ -216,11 +216,11 @@ $ mv stegsolve.jar bin/
 $ java -jar stegsolve.jar
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/116.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/116.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/117.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/117.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/118.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/118.jpeg?raw=true)
 
 ```
 Flag --> pctf{st3gs0lv3_1s_u53ful}
@@ -230,7 +230,7 @@ Flag --> pctf{st3gs0lv3_1s_u53ful}
 
 - The given `PNG` shows error since its `hex dumps` are in wrong format.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/119.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/119.jpeg?raw=true)
 
 - So we have to edit the `Hex Chunks`.
 - Online Tool --> https://hexed.it/
@@ -239,13 +239,13 @@ Flag --> pctf{st3gs0lv3_1s_u53ful}
 
  - We have to edit the header and add extra `00` Bytes in that.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/121.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/121.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/122.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/122.jpeg?raw=true)
 
 - Finally we get the `Flag`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/123.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/123.jpeg?raw=true)
 
 ```
 Flag --> inctfj{4Ye@aRr4mbB4_u_g0T_m3!}
@@ -253,7 +253,7 @@ Flag --> inctfj{4Ye@aRr4mbB4_u_g0T_m3!}
 
 ### Pattern Printing 1
 
-[Pattern Printing 1](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/Pattern_1.sh)
+[Pattern Printing 1](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/Pattern_1.sh)
 
 ```
 #!/bin/bash
@@ -269,12 +269,12 @@ do
 done
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/128.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/128.jpeg?raw=true)
 
 
 ### Pattern Printing 2
 
-[Pattern Printing 2](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/Pattern_2.sh)
+[Pattern Printing 2](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/Pattern_2.sh)
 
 ```
 #!/bin/bash
@@ -299,7 +299,7 @@ do
 done
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/129.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/129.jpeg?raw=true)
 
 ### Revers Me
 
@@ -319,17 +319,17 @@ f.close()
 
 - Then we can `print` all `printable characters` from the File using `strings` command and `filter` the output using `grep`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/124.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/124.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/127.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/127.jpeg?raw=true)
 
-[Python File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/1.py)
+[Python File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/1.py)
 
-[Revers File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/revers.me)
+[Revers File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/revers.me)
 
-[Text File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/1.txt)
+[Text File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/1.txt)
 
-[Bash Script File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/1.sh)
+[Bash Script File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/1.sh)
 
 ```
 Flag --> inctf{Y0u_ar3_g00d_4t_rev3rs1ng_1_gu3ss}
@@ -352,7 +352,7 @@ PS: "inctf" in the flag is also case insensitive. Find three flags in the file.
 strings find-flags-in-me | grep 'inctf'
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/130.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/130.jpeg?raw=true)
 
  - Now try with `case insensitive` command.
 
@@ -360,7 +360,7 @@ strings find-flags-in-me | grep 'inctf'
 strings find-flags-in-me | grep -i 'inctf'
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/131.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/131.jpeg?raw=true)
 
 - Now we have `Extracted` `Two` `Flags`.
 - One more flag is there to be Extracted.
@@ -371,7 +371,7 @@ strings find-flags-in-me | grep -i 'inctf'
 strings find-flags-in-me | grep -i 'i'
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/132.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/132.jpeg?raw=true)
 
 - Lets `Replace` the `dots` with `Empty Space`.
 
@@ -381,9 +381,9 @@ tr "Character to be Replaced" "Replacement Character"
 $ tr '.' ' '
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/133.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/133.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/134.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/134.jpeg?raw=true)
 
 - We shall see that there are Empty Spaces.
 - So next lets try to `Remove` the `White Space`.
@@ -395,20 +395,20 @@ sed 's/ //g'
 $ tr '.' ' '
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/135.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/135.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/136.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/136.jpeg?raw=true)
 
 - Now lets try to `grep` for `flag` format.
 - When we try with different `inctf` combinations we shall get some outputs.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/138.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/138.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/137.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/137.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/139.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/139.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/140.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/140.jpeg?raw=true)
 
 - After trying some `combinations` we shall find that the flag is `scattered` in `different places`. 
 
@@ -424,11 +424,11 @@ xxd find-flags-in-me | tr '.' ' ' | sed 's/ //g' | grep -i 'inc'
 xxd find-flags-in-me | tr '.' ' ' | sed 's/ //g' | grep -i 't'
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/142.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/142.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/141.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/141.jpeg?raw=true)
 
-[Bash Script](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/2.sh)
+[Bash Script](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/2.sh)
 
 ```
 Flags :
@@ -448,9 +448,9 @@ I Hope These files are as same as twins. But find it yourself.
 
 - Initially tried to `Analyze` through `various Tools` and found out that there are some differences in some `Byte``positions`.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/159.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/159.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/161.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/161.jpeg?raw=true)
 
 - Then `finally` ended up with the `Bash` Script.
 
@@ -512,9 +512,9 @@ done
 echo ""
 ```
 
-[Bash Script](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/4.sh)
+[Bash Script](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/4.sh)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/160.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/160.jpeg?raw=true)
 
 - One of the other way of finding the difference by `GUI` is with the `vimdiff` tool.
 - [Reference](https://superuser.com/questions/125376/how-do-i-compare-binary-files-in-linux)
@@ -533,36 +533,36 @@ $ xxd Twin2 > Twin2.hex
 $ vimdiff Twin1.hex Twin2.hex
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/143.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/143.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/144.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/144.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/145.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/145.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/146.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/146.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/147.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/147.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/148.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/148.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/149.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/149.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/150.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/150.jpeg?raw=true)
 
 - We shall see the `Comparisons` at each `Bytes`.
 - Now lets Analyse the differences at `Each Byte` seperately using `xxd` and `grep` commands alike the previous challenge.
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/151.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/151.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/152.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/152.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/153.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/153.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/154.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/154.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/155.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/155.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/156.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/156.jpeg?raw=true)
 
 
 ```
@@ -650,14 +650,14 @@ xxd Twin1 | grep 00240020
 xxd Twin2 | grep 00240020
 ```
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/157.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/157.jpeg?raw=true)
 
-![Bi0s](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/158.jpeg?raw=true)
+![Bi0s](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/158.jpeg?raw=true)
 
 - Here we shall see that at `Each Byte position` `One` `letter` `Differs`.
 - Now if we try to `Concatenate` all the characters at `Different` `Positions` then we shall get the `Final` `String`.
 
-[Bash Script File](https://github.com/abhishekabi2002/Bi0s/blob/master/Forensics/Assets/3.sh)
+[Bash Script File](https://github.com/a3X3k/Training/blob/main/Forensics/Assets/3.sh)
 
 ```
 Flag --> inctf{y0uGotm3}
